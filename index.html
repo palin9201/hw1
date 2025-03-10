@@ -5,7 +5,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
-		#container {margin: 0 auto;width: 1024px;}
+		body { margin: 0; }
+		.navbar {
+		    overflow: hidden;
+		    background-color: #333;
+		    position: fixed;
+		    top: 0;
+		    width: 100%; /* 改為 100%，確保導覽列對齊網頁 */
+		    height: 50px; /* 設定固定高度 */
+		}
+		#container {
+		    margin-top: 70px; /* 讓標題不會被擋住 */
+		}
+
+		.navbar a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+		.header-title {
+	    position: relative;
+	    margin-top: 80px; /* 確保標題不會被擋住 */
+		}
+		.navbar a:hover {
+		  background: #ddd;
+		  color: black;
+		}
+
+		.main {
+		  padding: 16px;
+		  margin-top: 30px;
+		  height: 1500px; /* Used in this example to enable scrolling */
+		}
+		iframe{border-radius:20px;}
+		#container {margin: 0 auto; margin-top: 60px;width: 1024px;}
 		td {text-align: center;}
 		.r_img{border-radius: 50%;width: 300px;height: 300px;}
 		.r_img1{border-radius:20px;}
@@ -13,18 +50,26 @@
 		.large_font1{font-size: 30px;}
 		.large_font1:hover{background-color: black;color: white;}
 		.r_img:hover{rotate: 10deg;opacity: 50%}
+
 	</style>
 </head>
 <body>
-	
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">台中國家歌劇院</a>
+  <a href="#contact">審計新村</a>
+</div>
+
 </body>
+
 </html>
 <div id="container"> 
 	<table >
 		<tr>
 			<td colspan="2">
 				<font class="large_font">台中市景點推薦</font><br>
-				<img src="00.jpeg" class="r_img1">
+				<p><iframe frameborder="0" src="slideshow.html" width="1024" height="350"></iframe></p>
+				
 			</td>
 			<td></td>
 		</tr>
@@ -66,6 +111,10 @@
 				<p>圖：審計新村</p>
 				<p>所在位置：台中市西區民生路368巷</p>
 			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1lpyxKgtFd_79qOJYyyd4yeOmg3fN1Ew&ehbc=2E312F" width="900" height="600"></iframe></td>
 		</tr>
 		<tr>
 			<td colspan="2" style="background-color: black;color: white;">
